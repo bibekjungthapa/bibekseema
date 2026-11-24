@@ -292,6 +292,17 @@ function Index() {
               <span aria-hidden className="animate-heart-float pointer-events-none absolute right-8 top-16 text-sm text-gold/50" style={{ animationDelay: "2s" }}>♥</span>
               <span aria-hidden className="animate-heart-float pointer-events-none absolute left-1/2 top-24 text-base text-envelope/25" style={{ animationDelay: "4s" }}>♥</span>
               <p className="text-2xl text-accent">॥ श्री गणेशाय नमः ॥</p>
+              <p className="font-script-alt mt-6 text-4xl leading-tight text-gold">Two souls, one journey</p>
+              <span aria-hidden className="animate-heart my-2 inline-block text-2xl text-envelope">♥</span>
+              <p className="text-lg italic text-muted-foreground">bound by love and blessed by our families.</p>
+              <p className="eyebrow mt-10">Together with their families</p>
+              <h1 className="mt-4 font-script text-6xl text-gold drop-shadow-sm">Bibek Thapa</h1>
+              <p className="my-3 flex items-center justify-center gap-3">
+                <span aria-hidden className="flourish" />
+                <span className="animate-heart font-script text-4xl text-accent">&amp;</span>
+                <span aria-hidden className="flourish" />
+              </p>
+              <h1 className="font-script text-6xl text-gold drop-shadow-sm">Seema Poudel</h1>
               <p className="eyebrow mt-10 animate-bounce">Scroll to reveal ↓</p>
             </Tilt>
           </Section>
