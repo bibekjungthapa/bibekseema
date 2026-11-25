@@ -75,20 +75,28 @@ function ErrorComponent({ error, reset }: ErrorComponentProps) {
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
-    // Replace these placeholders with the app's name and description when first building the app.
-    // Each content route, / included, must still set its own head(). Never add og:image or
-    // twitter:image here: every page without its own would inherit the root's preview image.
+    // Generic site-wide defaults only. Each content route sets its own title, description,
+    // og:image and twitter tags. Never add og:image or twitter:image here: every page
+    // without its own would inherit the root's preview image.
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Bibek & Seema — Wedding Invitation" },
-      { name: "description", content: "Join Bibek Thapa and Seema Poudel on December 3, 2026 at Ramalaya, Basbari." },
+      {
+        name: "description",
+        content: "Join Bibek Thapa and Seema Poudel on December 3, 2026 at Ramalaya, Basbari.",
+      },
+      { name: "theme-color", content: "#7a1f2b" }, // match your --seal / primary colour
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:site_name", content: "Bibek & Seema Wedding" },
+      { property: "og:locale", content: "en_US" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Parisienne&display=swap" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Parisienne&display=swap",
+      },
       {
         rel: "stylesheet",
         href: appCss,
