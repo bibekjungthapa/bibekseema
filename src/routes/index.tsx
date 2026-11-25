@@ -8,7 +8,7 @@ import { WEDDING_START, downloadIcs, googleCalendarUrl } from "@/lib/wedding-eve
 // Plain imports (jpg, mp3) are URL strings; asset.json imports are { url } objects. This handles both.
 const src = (p: string | { url: string }) => (typeof p === "string" ? p : p.url);
 
-const SITE_URL = "https://bibekwedsseema.digital"; // <- your real domain, no trailing slash
+const SITE_URL = "https://bibekwedsseema.digital/"; // <- your real domain, no trailing slash
 const TITLE = "Bibek & Seema — Wedding Invitation · Dec 3, 2026";
 const DESC =
   "You're invited to the wedding of Bibek Thapa and Seema Poudel, Thursday December 3, 2026, 10 AM at Ramalaya, Basbari.";
